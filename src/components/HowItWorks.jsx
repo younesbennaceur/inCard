@@ -13,7 +13,7 @@ const steps = [
     icon: <CreditCard size={24} />,
     title: "2. Activez",
     desc: "Recevez votre carte virtuelle instantanément ou commandez la physique.",
-    color: "bg-emerald-50 text-emerald-600"
+    color: "bg-[#18223D]/10 text-[#18223D]" // Remplacement du vert par ton bleu
   },
   {
     icon: <Wallet size={24} />,
@@ -36,7 +36,7 @@ const HowItWorks = () => {
         
         {/* En-tête de section */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-sm font-bold tracking-wide text-emerald-600 uppercase mb-2">Simplicité</h2>
+          <h2 className="text-sm font-bold tracking-wide text-[#18223D] uppercase mb-2">Simplicité</h2>
           <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
             Commencez en quelques minutes.
           </h3>

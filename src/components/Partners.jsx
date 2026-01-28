@@ -14,7 +14,7 @@ const createBrandIcon = (logoUrl) => {
     html: `<div class="w-12 h-12 bg-white rounded-full shadow-xl border-[3px] border-white flex items-center justify-center overflow-hidden transform hover:scale-110 transition-transform duration-300">
              <img src="${logoUrl}" class="w-8 h-8 object-contain" alt="marker" />
            </div>
-           <div class="w-2 h-2 bg-emerald-600 rounded-full absolute -bottom-1 left-1/2 -translate-x-1/2 border border-white"></div>`,
+           <div class="w-2 h-2 bg-[#18223D] rounded-full absolute -bottom-1 left-1/2 -translate-x-1/2 border border-white"></div>`,
     iconSize: [48, 48],
     iconAnchor: [24, 48],
     popupAnchor: [0, -48],
@@ -87,12 +87,11 @@ const Partners = () => {
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div className="max-w-2xl">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#18223D]/10 text-[#18223D] text-xs font-bold uppercase tracking-wider mb-4">
                     Présence Nationale
                 </div>
                 <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                    Partout en 
-                    Algérie.
+                    Partout en Algérie.
                 </h2>
                 <p className="text-gray-500 mt-4 text-lg">
                     Retrouvez nos partenaires dans les 58 wilayas. Sélectionnez votre ville pour explorer les offres.
@@ -107,8 +106,8 @@ const Partners = () => {
                   onClick={() => setActiveCity(city)}
                   className={`px-5 py-2.5 rounded-full text-sm font-bold whitespace-nowrap transition-all border ${
                     activeCity.id === city.id 
-                      ? 'bg-emerald-900 text-white border-emerald-900 shadow-lg shadow-emerald-900/20' 
-                      : 'bg-white text-gray-600 border-gray-200 hover:border-emerald-200 hover:text-emerald-700'
+                      ? 'bg-[#18223D] text-white border-[#18223D] shadow-lg shadow-[#18223D]/20' 
+                      : 'bg-white text-gray-600 border-gray-200 hover:border-[#18223D]/30 hover:text-[#18223D]'
                   }`}
                 >
                   {city.name}
@@ -145,7 +144,7 @@ const Partners = () => {
                  <Popup className="custom-popup">
                    <div className="text-center px-2 py-1">
                      <div className="font-bold text-gray-900 text-sm">{shop.name}</div>
-                     <span className="text-[10px] uppercase font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full mt-1 inline-block">
+                     <span className="text-[10px] uppercase font-bold text-[#18223D] bg-[#18223D]/10 px-2 py-0.5 rounded-full mt-1 inline-block">
                         {shop.promo}
                      </span>
                    </div>
@@ -161,7 +160,7 @@ const Partners = () => {
              animate={{ y: 0, opacity: 1 }}
              className="absolute top-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md px-6 py-3 rounded-full shadow-xl border border-white/50 flex items-center gap-3 z-[400]"
            >
-               <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600">
+               <div className="w-8 h-8 bg-[#18223D]/10 rounded-full flex items-center justify-center text-[#18223D]">
                    <Navigation size={16} fill="currentColor" />
                </div>
                <div>

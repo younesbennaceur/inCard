@@ -23,13 +23,13 @@ const Navbar = () => {
             
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-              <img className='h-16' src="/logo.png" alt="" />
+              <img className='h-16' src="/logo.png" alt="Logo" />
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex space-x-8">
               {navLinks.map((item) => (
-                <a key={item} href={`#${item.toLowerCase().replace(/\s/g, '-')}`} className="text-gray-600 hover:text-emerald-700 font-semibold transition-colors text-sm">
+                <a key={item} href={`#${item.toLowerCase().replace(/\s/g, '-')}`} className="text-gray-600 hover:text-[#18223D] font-semibold transition-colors text-sm">
                   {item}
                 </a>
               ))}
@@ -37,14 +37,14 @@ const Navbar = () => {
 
             {/* CTA Buttons Desktop */}
             <div className="hidden lg:flex items-center gap-4">
-              <button className="text-emerald-900 font-bold hover:opacity-70 transition-opacity text-sm">
+              <button className="text-[#18223D] font-bold hover:opacity-70 transition-opacity text-sm">
                 Devenir partenaire
               </button>
               
               <div className="relative">
                 <button 
                   onClick={() => setIsDownloadOpen(!isDownloadOpen)}
-                  className="bg-emerald-900 text-white px-5 py-2.5 rounded-full font-semibold flex items-center gap-2 hover:bg-emerald-800 transition-all shadow-lg shadow-emerald-900/20 active:scale-95 text-sm"
+                  className="bg-[#18223D] text-white px-5 py-2.5 rounded-full font-semibold flex items-center gap-2 hover:opacity-90 transition-all shadow-lg shadow-[#18223D]/20 active:scale-95 text-sm"
                 >
                   Télécharger l'app
                   <ChevronDown size={16} className={`transition-transform duration-200 ${isDownloadOpen ? 'rotate-180' : ''}`} />
@@ -61,11 +61,11 @@ const Navbar = () => {
                       className="absolute right-0 mt-2 w-48 bg-white rounded-2xl shadow-xl border border-gray-100 p-2 overflow-hidden z-50"
                     >
                       <a href="#" className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-xl transition-colors group">
-                        <Apple size={20} className="text-gray-900 group-hover:text-emerald-600 transition-colors" />
+                        <Apple size={20} className="text-gray-900 group-hover:text-[#18223D] transition-colors" />
                         <span className="text-sm font-medium text-gray-700">App Store</span>
                       </a>
                       <a href="#" className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-xl transition-colors group">
-                        <PlayCircle size={20} className="text-gray-900 group-hover:text-emerald-600 transition-colors" />
+                        <PlayCircle size={20} className="text-gray-900 group-hover:text-[#18223D] transition-colors" />
                         <span className="text-sm font-medium text-gray-700">Google Play</span>
                       </a>
                     </motion.div>
@@ -104,7 +104,7 @@ const Navbar = () => {
               ))}
               <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-3">
                 <button className="w-full text-center py-3 text-gray-600 font-bold">Devenir partenaire</button>
-                <button className="w-full bg-emerald-900 text-white py-4 rounded-xl font-bold shadow-lg flex justify-center items-center gap-2">
+                <button className="w-full bg-[#18223D] text-white py-4 rounded-xl font-bold shadow-lg flex justify-center items-center gap-2 hover:opacity-90 transition-opacity">
                   Télécharger l'app
                 </button>
               </div>
