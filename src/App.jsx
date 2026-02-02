@@ -2,8 +2,8 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'  // <-- Pas d'accolades {Home}, car c'est un export default
 
 import Navbar from './components/Navbar' 
+import Footer from './components/Footer'
 
- // <-- Pas d'accolades {Navbar}, car c'est un export default
 
 function App() {
   return (
@@ -13,11 +13,12 @@ function App() {
         <Route path='/' element={<Home />} />
         
        
-        {/* Ajout de la route pour la page "À propos de nous" */}
+     
        
       </Routes>
+      <Footer />
     </div>
   )
 }
 
-export default App  // <-- On exporte seulement App ici
+export default App  
